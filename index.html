@@ -1,0 +1,158 @@
+<!DOCTYLE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
+   </head>
+  <body>
+    <header>
+      <h1>HTML Form Reference</h1>
+    </header>
+    
+    <main>
+      <section id="table-form-tags">
+        <h2>Form Tags</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Tag</th>
+              <th>Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">&lt;form&gt;</span></td>
+              <td>Form</td>
+              <td>The wrapper element for all HTML forms.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;input&gt;</span></td>
+              <td>Input</td>
+              <td>The input element has a type attribute which determines how it renders on the web page and what kind of data it can accept.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;label&gt;</span></td>
+              <td>Label</td>
+              <td>The label tag defines a label for many form elements.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;textarea&gt;</span></td>
+              <td>Textarea</td>
+              <td>The textarea element is used to create a bigger text field for users to write more text.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;select&gt;</span></td>
+              <td>Select</td>
+              <td>Defines a drop-down list.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;option value =""&gt;</span></td>
+              <td>Option value</td>
+              <td>The &lt;option&gt; elements defines an option that can be selected.</td>
+            </tr>
+            <tr>
+              <td><span class="code">&lt;datalist id=""&gt;</span></td>
+              <td>Datalist input</td>
+              <td>The &lt;datalist&gt; is used with an &lt;input type="text"&gt; element. The &lt;input&gt; creates a text field that users can type into and filter options from the &lt;datalist&gt;.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      
+      
+      <section id="table-form-attributes">
+        <h2>Form Attributes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Name</th>
+              <th>Which element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="code">type="text"</span></td>
+              <td>Text fields</td>
+              <td>&lt;input&gt;</td>
+              <td>&lt;input type="text"&gt; defines a single-line input field for text input.</td>
+            </tr>
+            <tr>
+              <td><span class="code">name=""</span></td>
+              <td>Name</td>
+              <td>&lt;input&gt;</td>
+              <td>We must include a name attribute for the &lt;input&gt; — without the name attribute, information in the &lt;input&gt; won’t be sent when the &lt;form&gt; is submitted. </td>
+            </tr>
+            <tr>
+              <td><span class="code">for=""</span></td>
+              <td>For</td>
+              <td>&lt;label&gt; & &lt;input&gt;</td>
+              <td>The for attribute of the &lt;label&gt; tag should be equal to the id attribute of the &lt;input&gt; element to bind them together.</td>
+            </tr>
+            <tr>
+              <td><span class="code">type ="password"</td>
+              <td>Password</td>
+              <td>&lt;input&gt;</td>
+              <td>An &lt;input type ="password"&gt; element will replace input text with another character like an asterisk (*) or a dot (•).</td>
+            </tr>
+            <tr>
+              <td><span class="code">type="number"</span></td>
+              <td>Number</td>
+              <td>&lt;input&gt;</td>
+              <td>By setting type="number" for an &lt;input&gt;we can restrict what users type into the input field to just numbers.</td>
+            </tr>
+            <tr>
+              <td><span class="code">step=""</span></td>
+              <td>Step</td>
+              <td>number attribute in &lt;input&gt;</td>
+              <td>We can provide a step attribute which creates arrows inside the input field to increase or decrease by the value of the step attribute.</td>
+            </tr>
+            <tr>
+              <td><span class="code">type="range"</td>
+              <td>Range input</td>
+              <td>&lt;input&gt;</td>
+              <td>Another option we could use is setting type to "range" which creates a slider. - You can add assign min & max values & step.</td>
+            </tr>
+            <tr>
+              <td><span class="code">type="checkbox"</span></td>
+              <td>Checkbox</td>
+              <td>&lt;input&gt;</td>
+              <td>A checkbox input; use value="name of value" to create the checkbox name</td>
+            </tr>
+            <tr>
+              <td><span class="code">type="radio"</span></td>
+              <td>Radio button</td>
+              <td>&lt;input&gt;</td>
+              <td>Multiple options - radio buttons (like checkboxes) do not display their value. We have an associated &lt;label&gt; to represent the value of the radio button. To group radio buttons together, we assign them the same name and only one radio button from that group can be selected.</td>
+            </tr>
+            <tr>
+              <td><span class="code">type="submit"</span></td>
+              <td>Submit form</td>
+              <td>&lt;input&gt;</td>
+              <td>&lt;input type="submit" value="Send"&gt; - if not using value attribute, the default text is submit.</td>
+            </tr>
+            <tr>
+              <td><span class="code">rows="" cols=""</span></td>
+              <td>rows & columns</td>
+              <td>&lt;textarea&gt;</td>
+              <td>The rows attribute specifies the visible number of lines in a text area. The cols attribute specifies the visible width of a text area.</td>
+            </tr>
+            <tr>
+              <td><span class="code">required</span></td>
+              <td>Required</td>
+              <td>&lt;input&gt;</td>
+              <td>Used to make an input mandatory to fill out.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    
+    <footer>
+      <h6>Created by Jessica Mitchell</h6>
+    </footer>
+    
+  </body>
+</html>
