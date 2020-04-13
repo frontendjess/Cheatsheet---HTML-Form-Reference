@@ -1,0 +1,35 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fbeec1; 
+}
+
+h1 {
+  text-align: center;
+  
+}
+h2 {
+  background-color: #e1b382;
+  text-align: center;
+}
+
+table {
+  border: 2px solid #12343b;
+  width: 700px;
+  margin: 0 auto;
+}
+
+thead {
+  font-family: 'Merriweather', serif;
+  background-color: #659dbd;
+}
+
+th, td {
+  border-top: 2px solid #12343b;
+  padding: 10px;
+}
+
+.code {
+  font-family: monospace;
+  background-color: #c89666;
+}
+
